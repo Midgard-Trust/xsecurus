@@ -190,9 +190,9 @@ public:
         nZerocoinStartHeight = 999999999; // (PIVX: 863787, Phore 90000)
         nZerocoinStartTime = 4101895950; // December 25, 2099 9:32:30 AM GMT-06:00
         // nBlockEnforceSerialRange = 90003; //Enforce serial range starting this block (Phore 90003)
-        nBlockRecalculateAccumulators = 999999; // (PIVX: 895400, Phore 90005) //Trigger a recalculation of accumulators
+        nBlockRecalculateAccumulators = 999999999; // (PIVX: 895400, Phore 90005) //Trigger a recalculation of accumulators
         // nBlockFirstFraudulent = 90002; // (PIVX: 908000, Phore 90002) //First block that bad serials emerged
-        nBlockLastGoodCheckpoint = 999999; // (PIVX: 891730, Phore 90005) //Last valid accumulator checkpoint
+        nBlockLastGoodCheckpoint = 999999999; // (PIVX: 891730, Phore 90005) //Last valid accumulator checkpoint
         // nBlockEnforceInvalidUTXO = 0; // (PIVX: 902850) //Start enforcing the invalid UTXO's
         // nInvalidAmountFiltered = 268200*COIN; // (PIVX: 268200) //Amount of invalid coins filtered through exchanges, that should be considered valid
         nBlockZerocoinV2 = 999999999; // (PIVX: 1153160) //!> The block that zerocoin v2 becomes active - roughly Tuesday, May 8, 2018 4:00:00 AM GMT
