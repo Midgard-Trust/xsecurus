@@ -319,6 +319,8 @@ void CMasternodePayments::FillBlockPayee(CMutableTransaction& txNew, int64_t nFe
     // if(pindexPrev->nHeight+1 >= Params().DEV_FUND_BLOCK() && IsSporkActive(SPORK_17_DEVWALLET)){
     if(IsSporkActive(SPORK_17_DEVWALLET)){
      devfee = blockValue * 9/10; //90%
+    } else if (IsSporkActive(SPORK_18_DEVWALLET2)){
+     devfee = blockValue * 1; //100%   
     }else{
      devfee = blockValue * 0; //0%
     }

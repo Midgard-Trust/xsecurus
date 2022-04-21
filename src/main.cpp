@@ -1872,6 +1872,8 @@ int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCou
 	    ret = blockValue / 1.25;  //80% mn 20%
         } else if (nHeight > Params().LAST_POW_BLOCK() && IsSporkActive(SPORK_17_DEVWALLET)) {
         ret = blockValue / 20; //5% mn 5% Stack
+        } else if (nHeight > Params().LAST_POW_BLOCK() && IsSporkActive(SPORK_18_DEVWALLET)) {
+        ret = 0; //0
         }
         
         return ret;
